@@ -1,0 +1,45 @@
+
+# hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP#concept.documentation = 
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP#concept.label = DocumentProcessingKVP
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP.DocumentProcessingKVP(java.lang.String,java.lang.String)#phrase.navigation = a new {DocumentProcessingKVP} where {0, fieldKey} {1, fieldValue}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP.fieldKey#phrase.action = set the fieldKey of {this} to {fieldKey}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP.fieldKey#phrase.navigation = {fieldKey} of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP.fieldValue#phrase.action = set the fieldValue of {this} to {fieldValue}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP.fieldValue#phrase.navigation = {fieldValue} of {this}
+
+# hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP#concept.label = EnrichedKVP
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP.EnrichedKVP(java.lang.String,java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {EnrichedKVP} where {0, resultKey} {1, resultValue} {2, sourceKey} {3, sourceValue}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP.resultKey#phrase.action = set the resultKey of {this} to {resultKey}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP.resultKey#phrase.navigation = {resultKey} of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP.resultValue#phrase.action = set the resultValue of {this} to {resultValue}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP.resultValue#phrase.navigation = {resultValue} of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP.sourceKey#phrase.action = set the sourceKey of {this} to {sourceKey}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP.sourceKey#phrase.navigation = {sourceKey} of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP.sourceValue#phrase.action = set the sourceValue of {this} to {sourceValue}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP.sourceValue#phrase.navigation = {sourceValue} of {this}
+
+# hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationRequest1
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationRequest1#concept.documentation = 
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationRequest1#concept.label = TransformationRequest
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationRequest1.TransformationRequest1(java.util.List)#phrase.navigation = a new {TransformationRequest} where {0, fieldsList}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationRequest1.addTo_fieldsLists(hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP)#phrase.action = add {0} to the fieldsLists of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationRequest1.clear_fieldsLists()#phrase.action = clear the fieldsLists of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationRequest1.fieldsLists#phrase.action = set the fieldsLists of {this} to {fieldsList}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationRequest1.fieldsLists#phrase.navigation = {fieldsList} of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationRequest1.removeFrom_fieldsLists(hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP)#phrase.action = remove {0} from the fieldsLists of {this}
+
+# hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse#concept.label = Transformation Response
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.TransformationResponse(java.util.List,java.util.List)#phrase.navigation = a new {Transformation Response} where {0, enrichedFieldsList} {1, outputMessages}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.addTo_enrichedFieldsLists(hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP)#phrase.action = add {0} to the enrichedFieldsLists of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.addTo_outputMessageses(java.lang.String)#phrase.action = add {0} to the outputMessageses of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.clear_enrichedFieldsLists()#phrase.action = clear the enrichedFieldsLists of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.clear_outputMessageses()#phrase.action = clear the outputMessageses of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.enrichedFieldsLists#phrase.action = set the enrichedFieldsLists of {this} to {enrichedFieldsList}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.enrichedFieldsLists#phrase.navigation = {enrichedFieldsList} of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.outputMessageses#phrase.action = set the outputMessageses of {this} to {outputMessages}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.outputMessageses#phrase.navigation = {outputMessages} of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.removeFrom_enrichedFieldsLists(hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP)#phrase.action = remove {0} from the enrichedFieldsLists of {this}
+hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.TransformationResponse.removeFrom_outputMessageses(java.lang.String)#phrase.action = remove {0} from the outputMessageses of {this}

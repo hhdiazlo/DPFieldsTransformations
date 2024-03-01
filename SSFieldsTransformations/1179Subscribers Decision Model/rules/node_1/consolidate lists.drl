@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>consolidate lists</name>
+  <uuid>a484eda1-85e5-4807-be96-fe43c13738f9</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new Transformation Response where
+		the enrichedFieldsLists are the enrichedFieldsLists of 'Appendix 1' , 
+		the outputMessageses are the outputMessageses of 'Appendix 1' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

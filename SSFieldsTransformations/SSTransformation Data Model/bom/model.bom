@@ -1,0 +1,133 @@
+
+package hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel;
+
+
+class DocumentProcessingKVP
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "DocumentProcessingKVP"
+        #de.generated
+{
+    string fieldKey
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "fieldKey"
+                #update;
+    string fieldValue
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "fieldValue"
+                #update;
+    DocumentProcessingKVP(string fieldKey, string fieldValue)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    DocumentProcessingKVP()
+                #dataio.default;
+}
+
+class EnrichedKVP
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "EnrichedKVP"
+        #de.generated
+{
+    string resultKey
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "resultKey"
+                #update;
+    string resultValue
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "resultValue"
+                #update;
+    string sourceKey
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "sourceKey"
+                #update;
+    string sourceValue
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "sourceValue"
+                #update;
+    EnrichedKVP(string resultKey, string resultValue, string sourceKey, string sourceValue)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    EnrichedKVP()
+                #dataio.default;
+}
+
+class TransformationRequest1
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "TransformationRequest1"
+        #de.generated
+{
+    java.util.List fieldsLists domain 0,* class hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "fieldsLists"
+                #update;
+    TransformationRequest1(java.util.List fieldsLists domain 0,* class hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    TransformationRequest1()
+                #dataio.default;
+    void addTo_fieldsLists(hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP fieldsLists)
+                property collectionAttribute "fieldsLists"
+                #update;
+    void clear_fieldsLists()
+                property collectionAttribute "fieldsLists"
+                #update;
+    void removeFrom_fieldsLists(hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP fieldsLists)
+                property collectionAttribute "fieldsLists"
+                #update;
+    void set_fieldsLists(java.util.Collection fieldsLists domain 0,* class hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.DocumentProcessingKVP)
+                property collectionAttribute "fieldsLists"
+                #update;
+}
+
+class TransformationResponse
+        property ads.typeId "5"
+        property com.fasterxml.jackson.annotation.JsonTypeName "TransformationResponse"
+        #de.generated
+{
+    java.util.List enrichedFieldsLists domain 0,* class hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "enrichedFieldsLists"
+                #update;
+    java.util.List outputMessageses domain 0,* class string
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "outputMessageses"
+                #update;
+    TransformationResponse(java.util.List enrichedFieldsLists domain 0,* class hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP, 
+        java.util.List outputMessageses domain 0,* class string)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    TransformationResponse()
+                #dataio.default;
+    void addTo_enrichedFieldsLists(hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP enrichedFieldsLists)
+                property collectionAttribute "enrichedFieldsLists"
+                #update;
+    void addTo_outputMessageses(string outputMessageses)
+                property collectionAttribute "outputMessageses"
+                #update;
+    void clear_enrichedFieldsLists()
+                property collectionAttribute "enrichedFieldsLists"
+                #update;
+    void clear_outputMessageses()
+                property collectionAttribute "outputMessageses"
+                #update;
+    void removeFrom_enrichedFieldsLists(hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP enrichedFieldsLists)
+                property collectionAttribute "enrichedFieldsLists"
+                #update;
+    void removeFrom_outputMessageses(string outputMessageses)
+                property collectionAttribute "outputMessageses"
+                #update;
+    void set_enrichedFieldsLists(java.util.Collection enrichedFieldsLists domain 0,* class hdiazl.ss_fields_decision_automation.ssfieldstransformations.sstransformationdatamodel.EnrichedKVP)
+                property collectionAttribute "enrichedFieldsLists"
+                #update;
+    void set_outputMessageses(java.util.Collection outputMessageses domain 0,* class string)
+                property collectionAttribute "outputMessageses"
+                #update;
+}
+
